@@ -1,11 +1,11 @@
 import React from "react";
-import { AiOutlineEdit, AiOutlineCheck, AiOutlineClose } from "react-icons/ai";
+import { AiOutlineEdit, AiOutlineClose } from "react-icons/ai";
 
 const style = {
   li: `flex justify-between bg-slate-200 p-4 my-2 capitalize`,
-  liComplete: `flex justify-between bg-slate-400 p-4 my-2 capitalize`,
-  row: `flex`,
-  text: `ml-2 cursor-pointer`,
+  liComplete: `flex justify-between bg-slate-400 p-4 my-2 capitalize `,
+  row: `flex rounded-md`,
+  text: `ml-2 cursor-pointer rounded-md`,
   textComplete: `ml-2 cursor-pointer line-through`,
   button: `cursor-pointer flex items-center`,
   editButton: `ml-2 text-blue-500 hover:text-blue-700`,

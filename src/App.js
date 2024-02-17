@@ -16,8 +16,8 @@ const style = {
   bg: `h-screen w-screen p-4 bg-gradient-to-r from-[#FF6B6B] to-[#4361EE]`,
   container: `bg-slate-100 max-w-[500px] w-full m-auto rounded-md shadow-xl p-4`,
   heading: `text-3xl font-bold text-center text-gray-800 p-2`,
-  form: `flex justify-between`,
-  input: `border p-2 w-full text-xl`,
+  form: `flex justify-between rounded-md`,
+  input: `border p-2 w-full text-xl rounded-md`,
   button: `bg-blue-500 p-4 ml-2 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300 ease-in-out`, // Button color changed to blue, hover effect added
   count: `text-center p-2`,
 };
@@ -25,8 +25,8 @@ const style = {
 function App() {
   const [todos, setTodos] = useState([]);
   const [input, setInput] = useState("");
-  const [isEditing, setIsEditing] = useState(false); // Track editing state
-  const [currentTodo, setCurrentTodo] = useState(null); // Hold edited todo data
+  const [isEditing, setIsEditing] = useState(false);
+  const [currentTodo, setCurrentTodo] = useState(null);
 
   // Create todo
   const createTodo = async (e) => {
